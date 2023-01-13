@@ -18,7 +18,7 @@ jobs:
           yarn run build
       - name: Package Directories
         run: |
-          7z a qb-web_latest.7z C:\qb-web\public
+          7z a qb-web_latest.7z C:\qb-web\dist
       - uses: actions/upload-artifact@v3
         with:
           name: qb-web_latest
